@@ -1,16 +1,10 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-
 	"title": "Visual Acuity Observation",
-
 	"type": "object",
-
 	"definitions": {
-
 	},
-
-	"allOf": [{"$ref": "Observation"}],
-
+	"allOf": [ {"$ref": "Observation"} ],
 	"properties": {
 
 		// Data
