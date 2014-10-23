@@ -1,0 +1,13 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"allOf": ["Polymorph"],
+	"properties": {
+		"content": {
+			"type": "array",
+			"items": {"$ref": "Entry"},
+			"minItems": 1
+		}
+	},
+	"required": ["content"]
+}
