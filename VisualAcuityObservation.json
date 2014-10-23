@@ -1,0 +1,61 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+
+	"title": "Visual Acuity Observation",
+
+	"type": "object",
+
+	"definitions": {
+
+	},
+
+	"allOf": [{"$ref": "Observation"}],
+
+	"properties": {
+
+		// Data
+		"testName": {
+			"description": "The name of the exact visual acuity test performed. This generally represents a broad category of applied refraction. Specific refraction details can be described using 'Refractive Correction'.",
+			"type": "string" // TODO: coded text or text
+		},
+		"description": {
+			"description": "An overall narrative description of the visual acuity test result.",
+			"type": "string"
+		},
+		"overallInterpretation": {
+			"description": "A term, commonly coded, expressing an overall interpretation of the visual acuity test.",
+			"type": "string"
+		},
+		"comment": {
+			"description": "Any additional narrative comment about the visual acuity test",
+			"type": "string"
+		},
+
+		// State
+		"confoundingFactors": {
+			"description": "Patient circumstances which affect interpretation of the result. Often termed 'reliability' in opthalmological documentation.",
+			"type": "string"
+		},
+		"refractiveCorrection": {
+			"description": "The specific type(s) of refractive correction applied when measuring visual acuity.",
+			"type": "string" // TODO: coded text
+		},
+		"refractionDetails": {
+			"description": "Details of the refraction applied to each eye."
+			// TODO: slot (cluster)
+		},
+		"pupillaryState": {
+			"description": "Details of the state of the pupil on examination."
+			// TODO: slot (cluster)
+		},
+
+		// Protocol
+		"testingDistance": {
+			"description": "The distance at which the subject's visual acuity was measured.",
+			"type": "integer"
+		}
+		// TODO: add missing properties
+
+	},
+	"required": []
+}
