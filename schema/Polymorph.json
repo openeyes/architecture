@@ -1,7 +1,0 @@
-{
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"type": "object",
-	"properties": {"type": {"type": "string"}},
-	"required": ["type"],
-	"discriminator": "type"
-}
