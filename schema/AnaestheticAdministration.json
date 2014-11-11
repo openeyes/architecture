@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"allOf": [{"$ref": "Action"}],
+	"properties": {
+		"type": {"$ref": "Coding"},
+		"givenByRole": {"$ref": "Coding"},
+		"agents": {
+			"type": "array",
+			"items": {"$ref": "Coding"},
+			"minItems": 1
+		}
+	},
+	"required": ["type", "givenByRole", "agents"]
+}

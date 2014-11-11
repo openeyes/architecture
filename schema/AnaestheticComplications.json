@@ -1,0 +1,11 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"allOf": [{"$ref": "Observation"}],
+	"properties": {
+		"complications": {
+			"type": "array",
+			"items": {"$ref": "Coding"}
+		}
+	},
+	"required": ["complications"]
+}

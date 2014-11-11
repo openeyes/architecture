@@ -1,12 +1,5 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"type": "object",
-	"properties": {
-		"content": {
-			"type": "array",
-			"items": {"$ref": "Entry"},
-			"minItems": 1
-		}
-	},
-	"required": ["content"]
+	"additionalProperties": false
 }

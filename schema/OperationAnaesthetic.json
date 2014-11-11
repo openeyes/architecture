@@ -1,0 +1,19 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"allOf": [{"$ref": "Section"}],
+	"properties": {
+		"administration": {
+			"type": "array",
+			"items": {"$ref": "AnaestheticAdministration"},
+			"minItems": 1,
+			"maxItems": 1
+		},
+		"complications": {
+			"type": "array",
+			"items": {"$ref": "AnaestheticComplications"},
+			"minItems": 0,
+			"maxItems": 1
+		}
+	},
+	"required": ["administration", "complications"]
+}
