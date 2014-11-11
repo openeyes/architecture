@@ -1,0 +1,30 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Quantity",
+	"description": "A measured amount (or an amount that can potentially be measured).",
+	"type": "object",
+	"properties": {
+		"value": {
+			"description": "Numerical value.",
+			"type": "number" // Precision is implied
+		},
+		"comparator": {
+			"description": "How to understand the value.",
+			"type": "string"
+		},
+		"units": {
+			"description": "Unit representation.",
+			"type": "string"
+		},
+		"system": {
+			"description": "System that defines coded unit form.",
+			"type": "string",
+			"format": "uri"
+		},
+		"code": {
+			"description": "Coded form of the unit.",
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

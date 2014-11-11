@@ -2,5 +2,9 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"title": "Observation",
 	"type": "object",
-	"allOf": [ {"$ref": "Entry"} ]
+	"allOf": [
+		{
+			"$ref": "Entry"
+		}
+	]
 }

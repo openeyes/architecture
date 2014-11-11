@@ -1,0 +1,22 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Coding",
+	"description": "A Coding is a representation of a defined concept using a symbol from a defined 'code system'",
+	"type": "object",
+	"properties": {
+		"system": {
+			"description": "Identity of the terminology system",
+			"type": "string",
+			"format": "uri"
+		},
+		"code": {
+			"description": "Symbol in syntax defined by the system",
+			"type": "string"
+		},
+		"display": {
+			"description": "Representation defined by the system",
+			"type": "string"
+		},
+	},
+	"additionalProperties": false
+}
