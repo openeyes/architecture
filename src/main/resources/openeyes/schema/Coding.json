@@ -16,7 +16,7 @@
 		"display": {
 			"description": "Representation defined by the system",
 			"type": "string"
-		},
+		}
 	},
 	"additionalProperties": false
 }

@@ -6,8 +6,7 @@
 			"type": "array",
 			"items": {"$ref": "Section"},
 			"minItems": 1
-		},
-		"context": {"$ref": "EventContext"}
+		}
 	},
 	"required": ["content"]
 }
