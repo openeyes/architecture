@@ -1,10 +1,20 @@
-import openeyes.schema.SchemaRepository
-import org.springframework.context.annotation.AnnotationConfigApplicationContext
+package openeyes
+
+import com.fasterxml.jackson.databind.ObjectMapper
 
 object Test {
   def main(args: Array[String]): Unit = {
-    val ctx = new AnnotationConfigApplicationContext("openeyes")
-    val repo = ctx.getBean(classOf[SchemaRepository])
-    repo.loadSchemas()
+    val testVal = (new ObjectMapper).readTree(
+"""
+{
+    "numerator": 6,
+    "denominator": 6
+}
+"""
+    )
+
+    val schema = openeyes.schema.schemaFactory.getJsonSchema("oe:VisualAcuityValueSnellenMetre")
+
+    println(schema.validate(testVal))
   }
 }

@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"allOf": [{"$ref": "VisualAcuityValue"}],
+	"allOf": [{"$ref": "oe:VisualAcuityValue"}],
 	"properties": {
 		"numerator": {
 			"type": "integer",

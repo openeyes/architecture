@@ -1,10 +1,10 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"allOf": [{"$ref": "Section"}],
+	"allOf": [{"$ref": "oe:Section"}],
 	"properties": {
 		"readings": {
 			"type": "array",
-			"items": {"$ref": "VisualAcuityReading"},
+			"items": {"$ref": "oe:VisualAcuityReading"},
 			"minItems": 1
 		}
 	},

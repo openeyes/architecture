@@ -1,10 +1,10 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"allOf": [{"$ref": "Observation"}],
+	"allOf": [{"$ref": "oe:Observation"}],
 	"properties": {
-		"correction": {"$ref": "Coding"},
-		"scale": {"$ref": "Coding"},
-		"value": {"$ref": "VisualAcuityValue"}
+		"correction": {"$ref": "oe:Coding"},
+		"scale": {"$ref": "oe:Coding"},
+		"value": {"$ref": "oe:VisualAcuityValue"}
 	},
 	"required": ["correction", "scale", "value"]
 }

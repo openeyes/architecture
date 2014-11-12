@@ -1,12 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"allOf": [{"$ref": "Action"}],
+	"allOf": [{"$ref": "oe:Action"}],
 	"properties": {
-		"type": {"$ref": "Coding"},
-		"givenByRole": {"$ref": "Coding"},
+		"type": {"$ref": "oe:Coding"},
+		"givenByRole": {"$ref": "oe:Coding"},
 		"agents": {
 			"type": "array",
-			"items": {"$ref": "Coding"},
+			"items": {"$ref": "oe:Coding"},
 			"minItems": 1
 		}
 	},
