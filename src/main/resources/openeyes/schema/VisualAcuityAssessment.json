@@ -5,7 +5,7 @@
 		"readings": {
 			"type": "array",
 			"items": {"$ref": "VisualAcuityReading"},
-			"minItems": 1,
+			"minItems": 1
 		}
 	},
 	"required": ["readings"]
