@@ -1,0 +1,8 @@
+{
+    "config": {
+	"vendor-dir": "src/main/php/vendor"
+    },
+    "require": {
+        "geraintluff/jsv4": "dev-master"
+    }
+}
