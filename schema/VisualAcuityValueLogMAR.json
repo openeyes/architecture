@@ -1,0 +1,13 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"allOf": [{"$ref": "VisualAcuityValue"}],
+	"properties": {
+		"value": {
+			"type": "number",
+			"multipleOf": 0.1,
+			"minimum": -0.7,
+			"maximum": 1.6
+		}
+	},
+	"required": ["value"]
+}

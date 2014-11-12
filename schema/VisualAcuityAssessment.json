@@ -1,0 +1,12 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"allOf": [{"$ref": "Section"}],
+	"properties": {
+		"readings": {
+			"type": "array",
+			"items": {"$ref": "VisualAcuityReading"},
+			"minItems": 1,
+		}
+	},
+	"required": ["readings"]
+}
