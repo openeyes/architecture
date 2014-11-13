@@ -8,5 +8,6 @@
 			"minItems": 1
 		}
 	},
-	"required": ["readings"]
+	"required": ["readings"],
+	"additionalProperties": false
 }

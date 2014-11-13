@@ -6,5 +6,6 @@
 		"scale": {"$ref": "oe:core.Coding"},
 		"value": {"$ref": "oe:oph.clinical.VisualAcuityValue"}
 	},
-	"required": ["correction", "scale", "value"]
+	"required": ["correction", "scale", "value"],
+	"additionalProperties": false
 }

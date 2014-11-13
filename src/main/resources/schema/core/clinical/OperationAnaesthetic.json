@@ -15,5 +15,6 @@
 			"maxItems": 1
 		}
 	},
-	"required": ["administration", "complications"]
+	"required": ["administration", "complications"],
+	"additionalProperties": false
 }

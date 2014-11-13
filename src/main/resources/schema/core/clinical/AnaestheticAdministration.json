@@ -10,5 +10,6 @@
 			"minItems": 1
 		}
 	},
-	"required": ["type", "givenByRole", "agents"]
+	"required": ["type", "givenByRole", "agents"],
+	"additionalProperties": false
 }

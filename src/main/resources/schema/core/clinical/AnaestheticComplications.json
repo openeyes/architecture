@@ -7,5 +7,6 @@
 			"items": {"$ref": "oe:core.Coding"}
 		}
 	},
-	"required": ["complications"]
+	"required": ["complications"],
+	"additionalProperties": false
 }
