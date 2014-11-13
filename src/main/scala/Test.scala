@@ -13,7 +13,7 @@ object Test {
 """
     )
 
-    val schema = core.schema.schemaFactory.getJsonSchema("oe:oph.clinical.VisualAcuityValueSnellenMetre")
+    val schema = core.schema.schemaFactory.getJsonSchema("oe:oph.clinical.VisualAcuityValue")
 
     println(schema.validate(testVal))
   }
