@@ -1,10 +1,10 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"allOf": [{"$ref": "oe:Section"}],
+	"allOf": [{"$ref": "oe:core.clinical.Section"}],
 	"properties": {
 		"readings": {
 			"type": "array",
-			"items": {"$ref": "oe:VisualAcuityReading"},
+			"items": {"$ref": "oe:oph.clinical.VisualAcuityReading"},
 			"minItems": 1
 		}
 	},

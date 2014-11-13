@@ -1,4 +1,4 @@
-package openeyes
+package oe
 
 import com.fasterxml.jackson.databind.ObjectMapper
 
@@ -13,7 +13,7 @@ object Test {
 """
     )
 
-    val schema = openeyes.schema.schemaFactory.getJsonSchema("oe:VisualAcuityValueSnellenMetre")
+    val schema = core.schema.schemaFactory.getJsonSchema("oe:oph.clinical.VisualAcuityValueSnellenMetre")
 
     println(schema.validate(testVal))
   }

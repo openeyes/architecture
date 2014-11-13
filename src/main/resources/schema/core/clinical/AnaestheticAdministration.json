@@ -1,12 +1,12 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"allOf": [{"$ref": "oe:Action"}],
+	"allOf": [{"$ref": "oe:core.clinical.Action"}],
 	"properties": {
-		"type": {"$ref": "oe:Coding"},
-		"givenByRole": {"$ref": "oe:Coding"},
+		"type": {"$ref": "oe:core.Coding"},
+		"givenByRole": {"$ref": "oe:core.Coding"},
 		"agents": {
 			"type": "array",
-			"items": {"$ref": "oe:Coding"},
+			"items": {"$ref": "oe:core.Coding"},
 			"minItems": 1
 		}
 	},

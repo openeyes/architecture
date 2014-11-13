@@ -4,7 +4,7 @@
 	"properties": {
 		"complications": {
 			"type": "array",
-			"items": {"$ref": "Coding"}
+			"items": {"$ref": "oe:core.Coding"}
 		}
 	},
 	"required": ["complications"]

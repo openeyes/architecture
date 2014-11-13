@@ -1,0 +1,10 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"allOf": [{"$ref": "oe:core.clinical.Observation"}],
+	"properties": {
+		"correction": {"$ref": "oe:core.Coding"},
+		"scale": {"$ref": "oe:core.Coding"},
+		"value": {"$ref": "oe:oph.clinical.VisualAcuityValue"}
+	},
+	"required": ["correction", "scale", "value"]
+}

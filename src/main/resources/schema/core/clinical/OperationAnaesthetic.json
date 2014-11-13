@@ -1,16 +1,16 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"allOf": [{"$ref": "oe:Section"}],
+	"allOf": [{"$ref": "oe:core.clinical.Section"}],
 	"properties": {
 		"administration": {
 			"type": "array",
-			"items": {"$ref": "oe:AnaestheticAdministration"},
+			"items": {"$ref": "oe:core.clinical.AnaestheticAdministration"},
 			"minItems": 1,
 			"maxItems": 1
 		},
 		"complications": {
 			"type": "array",
-			"items": {"$ref": "oe:AnaestheticComplications"},
+			"items": {"$ref": "oe:core.clinical.AnaestheticComplications"},
 			"minItems": 0,
 			"maxItems": 1
 		}
