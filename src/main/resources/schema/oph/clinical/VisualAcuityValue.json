@@ -1,5 +1,5 @@
 {
-	"$schema": "http://json-schema.org/draft-04/schema#",
+	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
 	"type": "object",
 	"abstract":  true
 }

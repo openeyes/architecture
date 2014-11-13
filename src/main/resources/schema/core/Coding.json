@@ -1,5 +1,5 @@
 {
-	"$schema": "http://json-schema.org/draft-04/schema#",
+	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
 	"title": "Coding",
 	"description": "A Coding is a representation of a defined concept using a symbol from a defined 'code system'",
 	"type": "object",
