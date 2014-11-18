@@ -1,0 +1,16 @@
+{
+	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
+	"title": "Code System",
+	"description": "A Code System is ...",
+	"type": "object",
+	"required": [
+		"name"
+	],
+	"properties": {
+		"name": {
+			"description": "Name of code system",
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}

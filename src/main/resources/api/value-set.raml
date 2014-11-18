@@ -1,0 +1,35 @@
+#%RAML 0.8
+---
+title: OpenEyes Value Set Service
+baseUri: http://api.preview.openeyes.org.uk/value-set/{version}
+version: v1
+mediaType: application/json
+schemas:
+  - valueSet: |
+      {
+        "$ref": "http://api.preview.openeyes.org.uk/schema/core/ValueSet.json"
+      }
+  - valueSets: |
+      {
+        "type": "array",
+        "items": {
+          "$ref": "http://api.preview.openeyes.org.uk/schema/core/ValueSet.json"
+        }
+      }
+/value-set:
+  get:
+    description: Find value sets
+    responses:
+      200:
+        body:
+          application/json:
+            schema: valueSets
+
+  /{valueSetId}:
+    get:
+      description: Find value set by ID
+      responses:
+        200:
+          body:
+            application/json:
+              schema: valueSet

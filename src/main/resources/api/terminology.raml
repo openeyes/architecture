@@ -1,0 +1,63 @@
+#%RAML 0.8
+---
+title: OpenEyes Terminology Service
+baseUri: http://api.preview.openeyes.org.uk/terminology/{version}
+version: v1
+mediaType: application/json
+schemas:
+  - codeSystem: |
+      {
+        "$ref": "http://api.preview.openeyes.org.uk/schema/core/CodeSystem.json"
+      }
+  - codeSystems: |
+      {
+        "type": "array",
+        "items": {
+          "$ref": "http://api.preview.openeyes.org.uk/schema/core/CodeSystem.json"
+        }
+      }
+  - concept: |
+      {
+        "$ref": "http://api.preview.openeyes.org.uk/schema/core/Concept.json"
+      }
+  - concepts: |
+      {
+        "type": "array",
+        "items": {
+          "$ref": "http://api.preview.openeyes.org.uk/schema/core/Concept.json"
+        }
+      }
+/code-system:
+  get:
+    description: Find code systems
+    responses:
+      200:
+        body:
+          application/json:
+            schema: codeSystems
+
+  /{codeSystemId}:
+    get:
+      description: Find code system by ID
+      responses:
+        200:
+          body:
+            application/json:
+              schema: codeSystem
+/concept:
+  get:
+    description: Find concepts
+    responses:
+      200:
+        body:
+          application/json:
+            schema: concepts
+
+  /{conceptId}:
+    get:
+      description: Find concept by ID
+      responses:
+        200:
+          body:
+            application/json:
+              schema: concept

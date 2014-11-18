@@ -1,0 +1,27 @@
+{
+	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
+	"title": "Concept",
+	"description": "A Concept is ...",
+	"type": "object",
+	"required": [
+		"system",
+		"code",
+		"display"
+	],
+	"properties": {
+		"system": {
+			"description": "Identity of the code system",
+			"type": "string",
+			"format": "uri"
+		},
+		"code": {
+			"description": "Symbol in syntax defined by the system",
+			"type": "string"
+		},
+		"display": {
+			"description": "Representation defined by the system",
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}
