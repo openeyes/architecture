@@ -1,6 +1,6 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"allOf": [{"$ref": "Observation"}],
+	"allOf": [{"$ref": "oe:core.clinical.Observation"}],
 	"properties": {
 		"complications": {
 			"type": "array",
