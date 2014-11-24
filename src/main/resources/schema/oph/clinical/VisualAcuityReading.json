@@ -2,6 +2,7 @@
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
 	"allOf": [{"$ref": "oe:core.clinical.Observation"}],
 	"properties": {
+		"eye": {"$ref": "oe:core.Coding"},
 		"correction": {"$ref": "oe:core.Coding"},
 		"scale": {"$ref": "oe:core.Coding"},
 		"value": {"$ref": "oe:oph.clinical.VisualAcuityValue"}
