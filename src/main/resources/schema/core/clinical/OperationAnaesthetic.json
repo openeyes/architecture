@@ -1,17 +1,16 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"id": "core.clinical.OperationAnaesthetic",
-	"allOf": [{"$ref": "/core.clinical.Section"}],
+	"allOf": [{"$ref": "core.clinical.Section"}],
 	"properties": {
 		"administration": {
 			"type": "array",
-			"items": {"$ref": "/core.clinical.AnaestheticAdministration"},
+			"items": {"$ref": "core.clinical.AnaestheticAdministration"},
 			"minItems": 1,
 			"maxItems": 1
 		},
 		"complications": {
 			"type": "array",
-			"items": {"$ref": "/core.clinical.AnaestheticComplications"},
+			"items": {"$ref": "core.clinical.AnaestheticComplications"},
 			"minItems": 0,
 			"maxItems": 1
 		}

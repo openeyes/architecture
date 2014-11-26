@@ -1,12 +1,11 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"id": "oph.clinical.VisualAcuityReading",
-	"allOf": [{"$ref": "/core.clinical.Observation"}],
+	"allOf": [{"$ref": "core.clinical.Observation"}],
 	"properties": {
-		"eye": {"$ref": "/core.Coding"},
-		"correction": {"$ref": "/core.Coding"},
-		"scale": {"$ref": "/core.Coding"},
-		"value": {"$ref": "/oph.clinical.VisualAcuityValue"}
+		"eye": {"$ref": "core.Coding"},
+		"correction": {"$ref": "core.Coding"},
+		"scale": {"$ref": "core.Coding"},
+		"value": {"$ref": "oph.clinical.VisualAcuityValue"}
 	},
 	"required": ["correction", "scale", "value"],
 	"additionalProperties": false

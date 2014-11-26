@@ -1,7 +1,6 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"id": "oph.clinical.VisualAcuityValueSnellenMetre",
-	"allOf": [{"$ref": "/oph.clinical.VisualAcuityValue"}],
+	"allOf": [{"$ref": "oph.clinical.VisualAcuityValue"}],
 	"properties": {
 		"numerator": {
 			"type": "integer",

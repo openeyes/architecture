@@ -1,6 +1,5 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"id": "core.clinical.Section",
 	"type": "object",
 	"abstract":  true
 }

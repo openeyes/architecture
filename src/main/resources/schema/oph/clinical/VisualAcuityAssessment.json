@@ -1,11 +1,10 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"id": "oph.clinical.VisualAcuityAssessment",
-	"allOf": [{"$ref": "/core.clinical.Section"}],
+	"allOf": [{"$ref": "core.clinical.Section"}],
 	"properties": {
 		"readings": {
 			"type": "array",
-			"items": {"$ref": "/oph.clinical.VisualAcuityReading"},
+			"items": {"$ref": "oph.clinical.VisualAcuityReading"},
 			"minItems": 1
 		}
 	},

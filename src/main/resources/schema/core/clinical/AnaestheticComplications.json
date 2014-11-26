@@ -1,11 +1,10 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"id": "core.clinical.AnaestheticComplications",
-	"allOf": [{"$ref": "/core.clinical.Observation"}],
+	"allOf": [{"$ref": "core.clinical.Observation"}],
 	"properties": {
 		"complications": {
 			"type": "array",
-			"items": {"$ref": "/core.Coding"}
+			"items": {"$ref": "core.Coding"}
 		}
 	},
 	"required": ["complications"],
