@@ -1,5 +1,6 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
+	"id": "oph.clinical.VisualAcuityValue",
 	"type": "object",
 	"abstract":  true
 }

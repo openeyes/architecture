@@ -1,10 +1,11 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
+	"id": "core.clinical.Composition",
 	"type": "object",
 	"properties": {
 		"content": {
 			"type": "array",
-			"items": {"$ref": "oe:core.clinical.Section"},
+			"items": {"$ref": "/core.clinical.Section"},
 			"minItems": 1
 		}
 	},

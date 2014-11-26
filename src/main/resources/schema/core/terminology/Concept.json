@@ -1,5 +1,6 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
+	"id": "core.terminology.Concept",
 	"title": "Concept",
 	"description": "A Concept is ...",
 	"type": "object",

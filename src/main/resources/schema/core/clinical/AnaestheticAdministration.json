@@ -1,12 +1,13 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"allOf": [{"$ref": "oe:core.clinical.Action"}],
+	"id": "core.clinical.AnaestheticAdministration",
+	"allOf": [{"$ref": "/core.clinical.Action"}],
 	"properties": {
-		"type": {"$ref": "oe:core.Coding"},
-		"givenByRole": {"$ref": "oe:core.Coding"},
+		"type": {"$ref": "/core.Coding"},
+		"givenByRole": {"$ref": "/core.Coding"},
 		"agents": {
 			"type": "array",
-			"items": {"$ref": "oe:core.Coding"},
+			"items": {"$ref": "/core.Coding"},
 			"minItems": 1
 		}
 	},

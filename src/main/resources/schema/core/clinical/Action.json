@@ -1,5 +1,6 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"allOf": [{"$ref": "oe:core.clinical.Entry"}],
+	"id": "core.clinical.Action",
+	"allOf": [{"$ref": "/core.clinical.Entry"}],
 	"abstract":  true
 }

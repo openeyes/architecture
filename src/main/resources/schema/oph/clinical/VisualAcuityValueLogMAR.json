@@ -1,6 +1,7 @@
 {
 	"$schema": "http://openeyes.org.uk/json-schema/draft-04#",
-	"allOf": [{"$ref": "oe:oph.clinical.VisualAcuityValue"}],
+	"id": "oph.clinical.VisualAcuityValueLogMAR",
+	"allOf": [{"$ref": "/oph.clinical.VisualAcuityValue"}],
 	"properties": {
 		"value": {
 			"type": "number",
